@@ -1,7 +1,32 @@
+.box {
+  padding: var(--s1);
+  border:  var(--border-thin) solid;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.box * {
+  color: inherit;
+}
+
+.box.invert {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
 .center {
   box-sizing: content-box;
   margin-inline: auto;
   max-inline-size: 60ch;
+}
+
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space, 1rem);
+  justify-content: flex-start;
+  align-items: center;
 }
   
 .stack {

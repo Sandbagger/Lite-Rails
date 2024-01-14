@@ -17,9 +17,15 @@ class ApplicationLayout < ApplicationView
 
 			body do
 				center do
+          nav do
+            cluster do
+              li { 'Home' }
+              li { 'About' }
+            end
+          end
           main(&block)
         end
 			end
-		end
+  end
 	end
 end
