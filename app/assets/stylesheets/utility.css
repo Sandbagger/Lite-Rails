@@ -1,0 +1,13 @@
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
+.lede {
+  font-size: var(--size-step-1);
+  font-style: italic;
+  max-width: 50ch;
+}
+
+.lede + * {
+  --flow-space: 2em;
+}
