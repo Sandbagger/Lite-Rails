@@ -7,7 +7,8 @@ class ApplicationView < ApplicationComponent
 	# can change that to `Phlex::HTML` if you want to keep views and
 	# components independent.
 
-  Phlex::Rails::Helpers::LinkTo
+  include Phlex::Rails::Helpers::LinkTo
+
   def center
     render CenterComponent.new do
       yield

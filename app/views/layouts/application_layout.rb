@@ -19,8 +19,10 @@ class ApplicationLayout < ApplicationView
 				center do
           nav do
             cluster do
-              li { 'Home' }
-              li { 'About' }
+              li do 
+                link_to 'Home', '/'
+              end
+              link_to 'About', '/'
             end
           end
           main(&block)
