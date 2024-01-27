@@ -80,3 +80,7 @@ gem "litestream", "~> 0.3.1"
 gem "litestack", "~> 0.4.2"
 
 gem "phlex-rails", "~> 1.1"
+
+gem "sitepress-rails", "~> 4.0"
+
+gem "markdown-rails", "~> 2.1"

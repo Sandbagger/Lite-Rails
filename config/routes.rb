@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  root 'homepage#index'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  sitepress_pages
+  sitepress_root
 
-  # Defines the root path route ("/")
-  # root "articles#index"
 end

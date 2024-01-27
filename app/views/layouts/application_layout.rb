@@ -15,19 +15,19 @@ class ApplicationLayout < ApplicationView
 				stylesheet_link_tag "application", data_turbo_track: "reload"
 			end
 
-			body do
-				center do
+			body(class: 'center') do
           nav do
             cluster do
               li do 
-                link_to 'Home', '/'
+                link_to(root_path) { "Home" }
               end
-              link_to 'About', '/'
+              li do
+                link_to(about_index_path) { "About" }
+              end
             end
           end
-          main(&block)
-        end
+          main(class: 'stack', &block)
 			end
-  end
+    end
 	end
 end
