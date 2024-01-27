@@ -28,7 +28,7 @@ module Sitepress
     end
 
     def layout_component(resource)
-      method_name = resource.data.fetch('layout', 'page').concat('_layout')
+      method_name = resource.data.fetch("layout", "page").concat("_layout")
       layout_method = method(method_name)
       layout_method.call resource
     end

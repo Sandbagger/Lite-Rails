@@ -2,7 +2,7 @@
 
 class StackComponent < ApplicationComponent
   def template(&)
-    div(class: 'stack') do
+    div(class: "stack") do
       yield
     end
   end

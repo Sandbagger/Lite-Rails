@@ -6,7 +6,7 @@ class BoxComponent < ApplicationComponent
   end
 
   def template(&)
-    div(class: tokens('box', invert?: 'invert')) do
+    div(class: tokens("box", invert?: "invert")) do
       yield
     end
   end

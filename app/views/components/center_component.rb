@@ -2,7 +2,7 @@
 
 class CenterComponent < ApplicationComponent
   def template(&)
-    div(class: 'center') do
+    div(class: "center") do
       yield
     end
   end
