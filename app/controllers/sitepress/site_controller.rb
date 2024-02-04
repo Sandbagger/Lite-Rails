@@ -7,13 +7,13 @@ module Sitepress
 
     def page_layout(page)
       ApplicationLayout.new do
-        render_resource_inline page
+        PhlexMarkdownComponent.new(page.body).call.html_safe
       end
     end
 
     def application_layout(page)
       ApplicationLayout.new do
-        render_resource_inline page
+        PhlexMarkdownComponent.new(page.body).call.html_safe
       end
     end
 
