@@ -2,6 +2,8 @@
 
 class ApplicationLayout < ApplicationView
   include Phlex::Rails::Layout
+  include Phlex::Rails::Helpers::ContentFor
+  include PageHelper
 
   def template(&block)
     doctype
@@ -18,11 +20,11 @@ class ApplicationLayout < ApplicationView
       body(class: "center") do
         nav do
           cluster do
-            li do
-              link_to(root_path) { "Home" }
-            end
-            li do
-              link_to(about_index_path) { "About" }
+            Sitepress.site.resources.each do |resource|
+              break if resource.request_path.count('/') > 1
+              li do
+                link_to_page(resource)            
+              end
             end
           end
         end
