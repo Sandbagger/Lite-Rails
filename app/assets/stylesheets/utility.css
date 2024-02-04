@@ -11,3 +11,7 @@
 .lede + * {
   --flow-space: 2em;
 }
+
+.active {
+  text-decoration-style: solid
+}

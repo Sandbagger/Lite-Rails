@@ -54,6 +54,7 @@ a {
   text-decoration-color: var(--color-primary);
   text-decoration-thickness: 0.3ex;
   text-underline-offset: 0.3ex;
+  text-decoration-style: dashed
 }
 
 a[data-state="decoration-none"]{
