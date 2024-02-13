@@ -74,7 +74,7 @@ end
 
 # gem "sqlite-vss", "~> 0.1.2"
 
-# gem "litestream", "~> 0.3.1"
+gem "litestream", "~> 0.3.1"
 
 gem "litestack", "~> 0.4.2"
 
