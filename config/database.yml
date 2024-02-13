@@ -22,7 +22,7 @@ default: &default
 
 development:
   <<: *default
-  database: <%= Litesupport.root(`git branch --show-current`.chomp || 'development').join("data.sqlite3") %>
+  database: <%= if Rails.env.development? && Litesupport.root(`git branch --show-current`.chomp || 'development').join("data.sqlite3") %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
