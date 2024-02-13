@@ -70,13 +70,13 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "activerecord-enhancedsqlite3-adapter", "~> 0.5.0"
+# gem "activerecord-enhancedsqlite3-adapter", "~> 0.5.0"
 
-gem "sqlite-vss", "~> 0.1.2"
+# gem "sqlite-vss", "~> 0.1.2"
 
-gem "litestream", "~> 0.3.1"
+# gem "litestream", "~> 0.3.1"
 
-gem "litestack", "~> 0.4.2"
+# gem "litestack", "~> 0.4.2"
 
 gem "phlex-rails", "~> 1.1"
 
