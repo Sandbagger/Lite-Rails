@@ -21,13 +21,13 @@ jobs:
       - name: Install JavaScript dependencies
         run: npm install
 
-      - name: Build assets with esbuild
-        run: bin/rails assets:precompile
-
       - name: Install Ruby dependencies
         run: |
           gem install bundler
           bundle install --jobs 4 --retry 3
+
+      - name: Build assets with esbuild
+        run: bin/rails assets:precompile
 
       - name: Set up Database
         run: |
